@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+
+{% block content %}
+
+<b>{%  trans "Thanks." %} </b>
+
+{% if mesg %}
+ {{ mesg }}
+{% endif %}
+
+{% trans "You may proceed to " %}<a href="/home/"> home</a>.
+
+
+{% endblock %}

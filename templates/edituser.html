@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+
+{% block content %}
+<strong>{{ msg }}</strong>
+
+  <form action="" method="post">
+        {% csrf_token %}
+        <br>
+        <label for="password">{% trans "Password: " %}</label>
+        <input type="password" name="password" value="" id="password">
+        <label for="email">{% trans "Email: " %}</label>
+        <input type="email" name="email" value="" id="email">
+
+        <input type="submit" value={% trans "Submit" %}>
+        <input type="hidden" name="next" value="loginpage">
+    </form>
+
+{% endblock %}

@@ -1,0 +1,267 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-20 22:07+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: YAASApp/views.py:27
+msgid "User logged in. Log out before log in with a new user."
+msgstr "Usuario activo. Cierra la cuenta antes de entrar en una nueva."
+
+#: YAASApp/views.py:40
+msgid "Log in succesfull"
+msgstr "Log in con exito. Bienvenido."
+
+#: YAASApp/views.py:45
+msgid "Log in fail"
+msgstr "Log in fallido."
+
+#: YAASApp/views.py:49
+msgid "Please Sign in"
+msgstr "Por favor logeese."
+
+#: YAASApp/views.py:60
+msgid "New User is created. Please Login"
+msgstr "Nuevo usuario creado. Por favor logeese."
+
+#: YAASApp/views.py:72
+msgid "Log out sucesfull"
+msgstr "Log out con exito."
+
+#: YAASApp/views.py:77
+msgid "No user login"
+msgstr "Ningun usuario logeado."
+
+#: YAASApp/views.py:94
+msgid "User Info edited"
+msgstr "Informacion de usuario editada"
+
+#: YAASApp/views.py:99 YAASApp/views.py:135 YAASApp/views.py:159
+#: YAASApp/views.py:165
+msgid "You have to log in first"
+msgstr "Tiene que logearse"
+
+#: YAASApp/views.py:122 YAASApp/views.py:209
+msgid ""
+"The minimun duration of an auction is 72hours. You have to change the "
+"deadline."
+msgstr ""
+"La duracion minima para una subasta es de 72h. Tiene que cambiar la fecha de "
+"fin."
+
+#: YAASApp/views.py:132
+msgid "Not valid data"
+msgstr "Datos no validos."
+
+#: YAASApp/views.py:151
+msgid ""
+"New auction has been saved and a confirmation email has been sent to your "
+"email."
+msgstr "Nueva subasta guardada y email de confirmacion enviado."
+
+#: YAASApp/views.py:154
+msgid "Auction is not saved"
+msgstr "Subasta no guardada"
+
+#: YAASApp/views.py:183
+msgid "This auction is not active, you can not edit it."
+msgstr "La subasta no esta activa y no se puede editar."
+
+#: YAASApp/views.py:187
+msgid "You can not edit auctions from other sellers."
+msgstr "No puede editar subastas de otros vendedores."
+
+#: YAASApp/views.py:191 YAASApp/views.py:228 YAASApp/views.py:246
+msgid "Auction not found."
+msgstr "Subasta no encontrada"
+
+#: YAASApp/views.py:218
+msgid "Auction edited."
+msgstr "Subasta editada"
+
+#: YAASApp/views.py:242
+msgid "Auction banned."
+msgstr "Subasta baneada"
+
+#: YAASApp/views.py:250
+msgid "You have to be the admin for ban an auction."
+msgstr "Tiene que ser el administrador para poder banear una subasta"
+
+#: YAASApp/views.py:260
+msgid "Languaje changed"
+msgstr "Lenguaje cambiado"
+
+#: templates/add_auction.html:4 templates/add_auction.html.py:9
+#: templates/wizardtest.html:6
+msgid "Add Auction"
+msgstr "Añadir Subasta"
+
+#: templates/add_auction.html:20 templates/edituser.html:16
+#: templates/login.html:19 templates/registration.html:14
+#: templates/wizardtest.html:23
+msgid "Submit"
+msgstr "Submit"
+
+#: templates/auction.html:10
+msgid "Minimun price:"
+msgstr "Precio minimo:"
+
+#: templates/auction.html:11
+msgid "Deadline:"
+msgstr "Fecha vencimiento:"
+
+#: templates/auction.html:12
+msgid "Seller:"
+msgstr "Vendedor:"
+
+#: templates/auction.html:13
+msgid "State:"
+msgstr "Estado:"
+
+#: templates/auction.html:20 templates/edit_auction.html:22
+msgid "Edit"
+msgstr "Editar"
+
+#: templates/auction.html:24
+msgid "Ban"
+msgstr "Banear"
+
+#: templates/base.html:14
+msgid "Yet Another Auction Site"
+msgstr "Otro Sitio de Subastas"
+
+#: templates/base.html:20
+msgid "Home"
+msgstr "Inicio"
+
+#: templates/base.html:23
+msgid "Login"
+msgstr "Login"
+
+#: templates/base.html:26
+msgid "Logout"
+msgstr "Logout"
+
+#: templates/base.html:29
+msgid "Register"
+msgstr "Registrar"
+
+#: templates/base.html:32
+#, fuzzy
+msgid "EditUser"
+msgstr "Editar Usuario"
+
+#: templates/base.html:36
+#, fuzzy
+msgid "AddAuction"
+msgstr "Añadir Subasta"
+
+#: templates/base.html:39
+msgid "Admin"
+msgstr "Admin"
+
+#: templates/base.html:48
+msgid "English"
+msgstr "Ingles"
+
+#: templates/base.html:49
+msgid "Spanish"
+msgstr "Español"
+
+#: templates/base.html:52
+msgid "Change"
+msgstr "Cambiar"
+
+#: templates/done.html:7
+msgid "Thanks."
+msgstr "Gracias."
+
+#: templates/done.html:13
+msgid "You may proceed to "
+msgstr "Quizás quiera proceder al "
+
+#: templates/edit_auction.html:5
+msgid "Edit your auction"
+msgstr "Edita tu subasta"
+
+#: templates/edit_auction.html:14
+msgid "Edit auction: "
+msgstr "Ediccion de subasta: "
+
+#: templates/edit_auction.html:17
+msgid "Title: "
+msgstr "Titulo: "
+
+#: templates/edit_auction.html:18
+msgid "Description: "
+msgstr "Descripción: "
+
+#: templates/edit_auction.html:19 templates/home.html:15
+msgid "Deadline: "
+msgstr "Fecha vencimiento:"
+
+#: templates/edit_auction.html:19
+msgid "(Day/Month/Year Hour:Min)"
+msgstr "(Dia/Mes/Año Hora:Min)"
+
+#: templates/edit_auction.html:20
+msgid "Minimun Price: "
+msgstr "Precio minimo: "
+
+#: templates/edituser.html:11 templates/login.html:16
+msgid "Password: "
+msgstr "Contraseña"
+
+#: templates/edituser.html:13
+msgid "Email: "
+msgstr "Correo"
+
+#: templates/home.html:7
+msgid "No auctions."
+msgstr "No hay subastas"
+
+#: templates/home.html:14
+msgid "Minimun price: "
+msgstr "Precio minimo: "
+
+#: templates/home.html:16
+msgid "Seller: "
+msgstr "Vendedor:"
+
+#: templates/login.html:9
+msgid "Password or username is incorrect"
+msgstr "Usuario o contraseña incorrectos"
+
+#: templates/login.html:14
+msgid "Username: "
+msgstr "Nombre de usuario: "
+
+#: templates/registration.html:5
+msgid "Create User"
+msgstr "Crear usuario"
+
+#: templates/registration.html:9
+msgid "Create an account"
+msgstr "Crear una cuenta"
+
+#: templates/wizardtest.html:9
+#, fuzzy
+msgid "Confirm Auction"
+msgstr "Confirmar Auction"
+
+#~ msgid "Add Blog"
+#~ msgstr "Añadir Blog"

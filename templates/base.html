@@ -1,0 +1,79 @@
+<html>
+{% load i18n %}
+
+<style type= "text/css">
+    body {color: #1C1C1C; background: #D8D8D8; padding: 0 5em; margin:0}
+    h1 {color: #D4F3B6; padding: 2em 1em; background: #424242}
+    h2 {color: #000000; margin-top: 1em}
+    h3 {border-top: 2px solid #000000; margin-top: 1em}
+    p {margin: 1em 0}
+    .boton { float:left; }
+
+</style>
+<body>
+<h1><a href="/home/" style="text-decoration: none; color: #D4F3B6">YAAS: {% trans "Yet Another Auction Site" %}</a>
+</h1>
+
+<div style="text-align: left;">
+<h3></h3>
+<form action="/home/">
+    <input class="boton" type="submit" value={% trans "Home" %}>
+</form>
+<form action="/login/">
+    <input class="boton" type="submit" value={% trans "Login" %}>
+</form>
+<form action="/logout/">
+    <input class="boton" type="submit" value={% trans "Logout" %}>
+</form>
+<form action="/createuser/">
+    <input class="boton" type="submit" value={% trans "Register" %}>
+</form>
+<form action="/edituser/">
+    <input class="boton" type="submit" value={% trans "EditUser" %}>
+</form>
+
+<form action="/addauction/">
+    <input class="boton" type="submit" value={% trans "AddAuction" %}>
+</form>
+<form action="/admin/">
+    <input class="boton" type="submit" value={% trans "Admin" %}>
+</form>
+
+</div>
+
+
+
+
+<div style="text-align: right;">
+
+
+    <form action="/changelang/" method="post" >
+{% csrf_token %}
+  <input type="radio" name="lang" id="lang0" value="en" checked/>{% trans "English" %}
+    <input type="radio" name="lang" id="lang1" value="es" />{% trans "Spanish" %}
+
+
+<input type="submit" value={% trans "Change" %} />
+
+</form>
+
+</div>
+
+
+<h3></h3>
+<div style="text-align: right;">
+
+<form action="/search/" method="POST">
+        {% csrf_token %}
+
+    <input type="search" name='tit' title="tit" placeholder="title...">
+    <input type="submit" value="Search">
+</form></div>
+
+
+{% block content %}
+{% endblock %}
+
+
+</body>
+</html>

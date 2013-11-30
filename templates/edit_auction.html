@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+
+{% block title %}{% trans "Edit your auction" %}{% endblock %}
+
+{% block content %}
+
+
+{% if error %}
+ {{ error }}
+{% else %}
+<FONT COLOR="#FF0000"><h4>¡Warning: when you have finished the edition, press Submit or Cancel. Don't change to other page without press one of that buttons first!</h4></FONT>
+<p><b>{% trans "Edit auction: " %} {{ title }}</b></p>
+    <form action="/saveeditedauction/{{ id }}/" method="post">
+        {% csrf_token %}
+         <p>{% trans "Title: " %} <input type="text" name="title"  value="{{ title }}" required=True></p>
+         <p>{% trans "Description: " %} <textarea required=True name="description" cols="30" rows="10">{{ description }}</textarea></p>
+         <p>{% trans "Deadline: " %} <input name="deadline" type="datetime" required=True value="{{ deadline|date:"d/m/Y f" }}"> {% trans "(Day/Month/Year Hour:Min)" %}</p>
+         <p>{% trans "Minimun Price: " %} <input type="number" step="any" name="min_price" required=True value="{{ min_price }}"></p>
+
+        <input type="submit" value={% trans "Edit" %}>
+    </form>
+    <form action="/canceledit/{{ id }}/" method="post">        {% csrf_token %}
+<input type="submit" value="Cancel"> </form>
+{% endif %}
+{% endblock %}
+

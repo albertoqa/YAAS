@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+{% block content %}
+   <strong>{{ msg }}</strong>
+
+
+<h2>{{ auct.title }}</h2>
+<h4>{{ auct.description }}</h4>
+<font size="2"><p><b>{% trans "Minimun price:" %} {{ auct.min_price }} €<br>
+{% trans "Deadline:" %} {{ auct.deadline }}<br>
+{% trans "Seller:" %} {{ auct.seller.username }}<br>
+{% trans "State:" %} {{ auct.get_lifecycle_display }}</b></p></font>
+        <input type="hidden" name="edited_version" value="{{ edited_version }}" />
+
+    {% if bb %}<FONT COLOR="#FF0000"><h4>Actual bid: {{ bb.amount }}, user: {{ bb.user }}</h4></FONT>{% endif %}
+
+<div style="text-align: left;">
+<h3></h3>
+<form action="/editauction/{{ auct.id }}/" method="post">
+    {% csrf_token %}
+    <input class="boton" type="submit" value={% trans "Edit"%}>
+</form>
+<form action="/banauction/{{ auct.id }}/" method="post">
+    {% csrf_token %}
+    <input class="boton" type="submit" value={% trans "Ban"%}>
+</form>
+
+    <form action="/bidauction/{{ auct.id }}/" method="POST">
+    {% csrf_token %}
+    <input type="search" title='am' id='am' name='am' placeholder="amount">
+    <input type="submit" value="Bid">
+</form>
+
+<h3></h3>
+</div>
+
+
+{% endblock %}
+

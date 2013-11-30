@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+<h2>{% trans "Add Auction" %}</h2>
+
+{% block content %}
+       <strong>{{ msg }}</strong>
+
+<p><b>{% trans "Add Auction" %}</b></p>
+  {% if error%}
+  <p> <b>{{ error }}</b> </p>
+    {% endif %}
+
+
+
+
+    <form action="/addauction/" method="post">
+        {% csrf_token %}
+         {{ form.as_p }}
+        <input type="submit" value={% trans "Submit" %}>
+    </form>
+
+{% endblock %}
